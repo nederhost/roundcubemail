@@ -1,0 +1,30 @@
+CHANGELOG listcommands
+======================
+
+RELEASE 2.3.5
+
+- add german translation
+- fix composer.json
+
+RELEASE 2.2.3
+-------------
+
+- fixed CHANGELOG
+
+RELEASE 2.2
+-----------
+
+- added french translation
+- added russian translation
+
+RELEASE 2.1
+-----------
+
+- bugfix: prevent error when multiple identical headers are present
+- added spanish translation, pull request https://github.com/corbosman/listcommands/pull/5
+
+RELEASE 2.0
+-----------
+
+- bugfix: change imap_init to storage_init
+

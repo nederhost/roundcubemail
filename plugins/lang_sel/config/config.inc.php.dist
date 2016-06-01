@@ -1,0 +1,32 @@
+<?php
+
+/* lang_sel plugin */
+
+/* plugin localization */
+/* NOTICE:  This plugin has to perform $rcmail->load_language.
+            By default plugin localizations are not loaded.
+            So if you need a plugins localization on logon
+            page define it here as a pair of plugin name
+            and localization folder
+*/
+
+$rcmail_config['lang_sel_localizations'] = array(
+  'taskbar' => 'localization',
+  'captcha' => 'localization',
+  'rss_feeds' => 'localization',
+  'demologin' => 'localization',
+  'register' => 'localization',
+  'contactus' => 'localization',
+  'nabble' => 'localization',
+  'pwtools' => 'localization',
+  'impressum' => 'localization'
+  );
+
+/* limit languages */
+/* NOTICE: If you use settings plugin then configure 'limit_languages'
+           there. Otherwise configure and uncomment the following setting.
+           User's preferred language is always shown!
+*/
+//$rcmail_config['limit_languages'] = array("en_US", "de_DE", "fr_FR", "cs_CZ");
+
+?>
