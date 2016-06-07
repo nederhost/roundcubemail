@@ -143,7 +143,7 @@ if ($RCMAIL->config->get('http_received_header')) {
     $http_header .= $nldlm . 'by ' . $_SERVER['HTTP_HOST'];
 
     // WITH
-    $http_header .= $nldlm . 'with HTTP (' . $_SERVER['SERVER_PROTOCOL']
+    $http_header .= $nldlm . 'with ' . ( $_SERVER['REQUEST_SCHEME'] ? strtoupper($_SERVER['REQUEST_SCHEME']) : 'HTTP' ) . ' (' . $_SERVER['SERVER_PROTOCOL']
         . ' ' . $_SERVER['REQUEST_METHOD'] . '); ' . date('r');
 
     $headers['Received'] = wordwrap($http_header, 69, $nldlm);
